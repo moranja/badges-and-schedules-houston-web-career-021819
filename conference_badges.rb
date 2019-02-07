@@ -21,9 +21,6 @@ def assign_rooms(speakers)
 end
 
 def printer(speakers)
-  ##the_badges = []
-  ##the_rooms = []
-  
   the_badges = batch_badge_creator(speakers)
   the_rooms = assign_rooms(speakers)
   
