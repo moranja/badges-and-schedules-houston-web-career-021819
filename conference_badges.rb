@@ -20,3 +20,13 @@ def assign_rooms(speakers)
   return room_array
 end
 
+def printer(speakers)
+  the_badges = []
+  the_rooms = []
+  
+  the_badges = batch_badge_creator(speakers)
+  the_rooms = assign_rooms(speakers)
+  
+  the_badges.each {|i| puts i}
+  the_rooms.each {|i| puts i}
+end
